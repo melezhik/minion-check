@@ -3,7 +3,7 @@ regexp: ((\S+) jobs:\s+(\d+))
 code: note join "\n", map {$_->[0]} @{captures()} ;
 
 code: for my $c (@{captures()}){ \
-    # note explain $c; \
+    note $c->[0]; \
     our $failed_jobs++ if $c->[1] eq 'Failed' and $c->[2]; \
 }
 validator: our $failed_jobs ||=0; [ $failed_jobs == 0, 'zero failed jobs found' ]
