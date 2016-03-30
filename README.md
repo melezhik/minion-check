@@ -2,7 +2,6 @@
 
 verify your minion workers, jobs
 
-
 # INSTALL
     
     $ sparrow plg install minion-check
@@ -12,14 +11,19 @@ verify your minion workers, jobs
   $ sparrow plg run minion-check
   
 
-# SETTINGS
+# Settings
 
     [minion]
     
-      # command to run your minion command line script
+      # bash script to run your minion command
       command = cd /foo/bar && carton exec ./app.pl minion
 
 
 # AUTHOR
 
 [Alexey Melezhik](mailto:melezhik@gmail.com)
+
+# See Also
+
+Minion Doc - https://metacpan.org/pod/Minion
+
