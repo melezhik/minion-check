@@ -16,7 +16,7 @@ verify your minion workers, jobs
   
       [minion]
   
-      # in case you using carton install
+      # in case you use carton install
       command = cd /path/to/your/mojo/app && carton exec ./app.pl minion
   
 # Settings
