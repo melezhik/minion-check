@@ -23,7 +23,7 @@ verify your minion workers, jobs
 
       [minion]
     
-      # bash script to run your minion command
+      # bash script to run minion command
       command = cd /foo/bar && carton exec ./app.pl minion
 
 

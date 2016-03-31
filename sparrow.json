@@ -1,5 +1,5 @@
 {
-    "version": "0.0.1.3",
+    "version": "0.0.1.5",
     "name": "minion-check",
     "engine": "generic", 
     "description" : "verify your minion workers, jobs",
