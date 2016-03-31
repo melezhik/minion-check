@@ -1,0 +1,19 @@
+# 2016-03-31T18:15:15Z (created)
+# 2016-03-31T18:15:25Z (started)
+# 2016-03-31T18:15:26Z (finished)
+
+
+generator: my $l = []; \
+if (our $TASK_ID){ \
+  push @$l, ( \
+    'within: finished', \
+    'regexp: (\d\d\d\d-\d\d-\d\d)T(\S+)Z.*',  \
+      
+  ); \
+} \
+$l;
+
+
+validator: validator();
+
+

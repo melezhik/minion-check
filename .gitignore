@@ -1,4 +1,3 @@
 cpanfile.snapshot
 local
-suite.ini.my
-
+suite.my.ini

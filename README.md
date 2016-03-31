@@ -26,6 +26,9 @@ verify your minion workers, jobs
       # bash script to run minion command
       command = cd /foo/bar && carton exec ./app.pl minion
 
+      # check failed tasks for last 5 minutes, 10 hours, 2 days , etc ...
+      history = 10 minutes
+
 
 # AUTHOR
 

@@ -1,5 +1,0 @@
-regexp: (\d+)\s+(\S+)\s+(\S+)\s+(\S+)
-
-#67  inactive  sparrowhub.org:4616  2016-03-19T10:05:46Z
-
-code: my $i=0; note join "\n", map { join " ", @{$_} } @{captures()} ;
