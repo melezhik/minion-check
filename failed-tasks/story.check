@@ -1,6 +1,5 @@
-# 2016-03-31T18:15:15Z (created)
-# 2016-03-31T18:15:25Z (started)
-# 2016-03-31T18:15:26Z (finished)
+regexp: (.*)
+code: note join "\n", map {$_->[0]} @{captures()}
 
 
 generator: my $l = []; \
