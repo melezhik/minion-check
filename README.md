@@ -14,15 +14,11 @@ verify your minion workers, jobs
     $ sparrow check ini myhost minion-tasks
     $ sparrow check run myhost minion-tasks
   
-      [minion]
-  
-      # in case you use carton install
-      command = cd /path/to/your/mojo/app && carton exec ./app.pl minion
-  
+    # in case you use carton install
+    command = cd /path/to/your/mojo/app && carton exec ./app.pl minion
+
 # Settings
 
-      [minion]
-    
       # bash script to run minion command
       command = cd /foo/bar && carton exec ./app.pl minion
 

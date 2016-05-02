@@ -6,7 +6,7 @@ run_story( 'last-task');
 
 if ($TASK_ID){
 
-  my $cmd = ("bash -c '".config()->{minion}->{command})." job $TASK_ID '";
+  my $cmd = ("bash -c '".config()->{command})." job $TASK_ID '";
   my $out = `$cmd`;
   set_stdout($out);
 
@@ -28,7 +28,7 @@ sub validator {
     my $time_str = join ' ', @{capture()};
   
     my $t = Time::Piece->strptime( $time_str, '%Y-%m-%d %T' );
-    my $history = config()->{minion}->{history} || '1 minutes';
+    my $history = config()->{history} || '1 minutes';
     my $check_date = DateTime->now(
      time_zone => 'UTC'
     )->subtract( reverse ( split /\s+/, $history ) );
