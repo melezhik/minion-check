@@ -1,7 +1,6 @@
 {
-    "version": "0.0.3.0",
+    "version": "0.0.4.0",
     "name": "minion-check",
-    "engine": "generic", 
     "description" : "verify your minion workers, jobs",
     "url": "https://github.com/melezhik/check-minion.git"
 }

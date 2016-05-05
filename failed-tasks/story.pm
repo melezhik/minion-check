@@ -7,7 +7,9 @@ run_story( 'last-task');
 if ($TASK_ID){
 
   my $cmd = ("bash -c '".config()->{command})." job $TASK_ID '";
+
   my $out = `$cmd`;
+
   set_stdout($out);
 
 }else{
