@@ -8,18 +8,19 @@ verify your minion workers, jobs
     
 # USAGE
   
-    $ sparrow project create myhost
-    $ sparrow check add myhost minion-tasks
-    $ sparrow check set myhost minion-tasks minion-check
-    $ sparrow check ini myhost minion-tasks
-    $ sparrow check run myhost minion-tasks
+    $ sparrow project create web-app
+    $ sparrow task add web-app minion minion-check
+    $ sparrow task ini web-app minion
   
     # in case you use carton install
     command = cd /path/to/your/mojo/app && carton exec ./app.pl minion
 
-# Settings
+    $ sparrow task run web-app minion
+
+# Parameters
 
       # bash script to run minion command
+      # for example
       command = cd /foo/bar && carton exec ./app.pl minion
 
       # check failed tasks for last 5 minutes, 10 hours, 2 days , etc ...
@@ -32,5 +33,6 @@ verify your minion workers, jobs
 
 # See Also
 
-Minion Doc - https://metacpan.org/pod/Minion
+[Minion Doc](https://metacpan.org/pod/Minion)
+
 
