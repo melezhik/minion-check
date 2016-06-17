@@ -19,12 +19,18 @@ verify your minion workers, jobs
 
 # Parameters
 
-      # bash script to run minion command
-      # for example
-      command = cd /foo/bar && carton exec ./app.pl minion
+## command
 
-      # check failed tasks for last 5 minutes, 10 hours, 2 days , etc ...
-      history = 10 minutes
+Bash script to run minion command, for example:
+
+    command = cd /foo/bar && carton exec ./app.pl minion
+
+## history
+
+Sets checking time depth. In other words - checks failed tasks for last 5 minutes, 10 hours, 2 days , etc. For example:
+
+    history = 10 minutes
+
 
 
 # AUTHOR
