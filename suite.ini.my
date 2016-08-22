@@ -1,2 +1,0 @@
-# command to run your minion command line script
-command = cd ~/projects/sph/ && carton exec ./app.pl minion
