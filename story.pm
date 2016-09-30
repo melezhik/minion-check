@@ -2,6 +2,8 @@ our $TASK_ID;
 use Time::Piece;
 use DateTime;
 
+run_story( 'check-worker');
+
 run_story( 'last-task');
 
 if ($TASK_ID){
